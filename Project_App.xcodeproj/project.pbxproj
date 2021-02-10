@@ -11,6 +11,7 @@
 		EE062C8925D3324F007A4585 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE062C8825D3324F007A4585 /* ContentView.swift */; };
 		EE062C8B25D33256007A4585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE062C8A25D33256007A4585 /* Assets.xcassets */; };
 		EE062C8E25D33256007A4585 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE062C8D25D33256007A4585 /* Preview Assets.xcassets */; };
+		EE062C9825D3F443007A4585 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE062C9625D3F443007A4585 /* Main.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		EE062C8A25D33256007A4585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE062C8D25D33256007A4585 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE062C8F25D33256007A4585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE062C9725D3F443007A4585 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				EE062C8D25D33256007A4585 /* Preview Assets.xcassets */,
+				EE062C9625D3F443007A4585 /* Main.xcdatamodeld */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE062C9825D3F443007A4585 /* Main.xcdatamodeld in Sources */,
 				EE062C8925D3324F007A4585 /* ContentView.swift in Sources */,
 				EE062C8725D3324F007A4585 /* Project_AppApp.swift in Sources */,
 			);
@@ -328,6 +332,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE062C9625D3F443007A4585 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE062C9725D3F443007A4585 /* Main.xcdatamodel */,
+			);
+			currentVersion = EE062C9725D3F443007A4585 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EE062C7B25D3324C007A4585 /* Project object */;
 }
