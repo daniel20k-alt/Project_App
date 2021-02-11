@@ -12,6 +12,7 @@
 		EE062C8B25D33256007A4585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE062C8A25D33256007A4585 /* Assets.xcassets */; };
 		EE062C8E25D33256007A4585 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE062C8D25D33256007A4585 /* Preview Assets.xcassets */; };
 		EE062C9825D3F443007A4585 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE062C9625D3F443007A4585 /* Main.xcdatamodeld */; };
+		EE543C5F25D5CFE600985B76 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE543C5E25D5CFE600985B76 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EE062C8D25D33256007A4585 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE062C8F25D33256007A4585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE062C9725D3F443007A4585 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		EE543C5E25D5CFE600985B76 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				EE062C8D25D33256007A4585 /* Preview Assets.xcassets */,
 				EE062C9625D3F443007A4585 /* Main.xcdatamodeld */,
+				EE543C5E25D5CFE600985B76 /* DataController.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE062C9825D3F443007A4585 /* Main.xcdatamodeld in Sources */,
+				EE543C5F25D5CFE600985B76 /* DataController.swift in Sources */,
 				EE062C8925D3324F007A4585 /* ContentView.swift in Sources */,
 				EE062C8725D3324F007A4585 /* Project_AppApp.swift in Sources */,
 			);
