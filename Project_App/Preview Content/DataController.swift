@@ -26,6 +26,19 @@ class DataController: ObservableObject {
     }
     
     
+    static var preview: DataController = {
+        let dataController = DataController(inMemory: true)
+        
+        do {
+            try dataController.createSampleData()
+        } catch {
+            fatalError("Fatal erro creating preview: \(error.localizedDescription)")
+        }
+        
+        return dataController
+    }()
+    
+    
     func createSampleData() throws {
         let viewContext = container.viewContext //data loaded from disk
         
@@ -35,7 +48,6 @@ class DataController: ObservableObject {
             project.items = []
             project.creationDate = Date()
             project.closed = Bool.random()
-            
             
             for j in 1...10 {
                 let item = Item(context: viewContext)
@@ -49,6 +61,29 @@ class DataController: ObservableObject {
         }
         
         try viewContext.save()
+    }
+    
+    
+    func save() {
+        if container.viewContext.hasChanges {
+            try? container.viewContext.save() //only save if changes occur
+        }
+    }
+    
+    
+    func delete(_ object: NSManagedObject) {
+        container.viewContext.delete(object)
+    }
+    
+    
+    func deleteAll() {
+        let fetchRequest1: NSFetchRequest<NSFetchRequestResult> = Item.fetchRequest()
+        let batchDeleteRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
+        _ = try? container.viewContext.execute(batchDeleteRequest1)
+        
+        let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = Project.fetchRequest()
+        let batchDeleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
+        _ = try? container.viewContext.execute(batchDeleteRequest2)
         
     }
 }
